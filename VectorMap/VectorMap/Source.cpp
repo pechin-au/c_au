@@ -118,18 +118,18 @@ public:
 
 
 int main() {
-	MyMultiMap<int, int> v = MyMultiMap<int, int>();
-	v.insert(3, 100);
-	v.insert(2, 200);
-	v.insert(1, 300);
-	v.insert(3, 400);
-	v.insert(3, 500);
-	for (MyMultiMap<int, int>::iterator it = v.begin(); it !=
+	MyMultiMap<int, string> v = MyMultiMap<int, string>();
+	v.insert(3, "100");
+	v.insert(2, "200");
+	v.insert(1, "300");
+	v.insert(3, "400");
+	v.insert(3, "500");
+	for (MyMultiMap<int, string>::iterator it = v.begin(); it !=
 		v.end(); ++it) {
 		cout << (*it).second << endl;
 	}
 	cout << v.erase(3) << endl;
-	for (MyMultiMap<int, int>::iterator it = v.begin(); it !=
+	for (MyMultiMap<int, string>::iterator it = v.begin(); it !=
 		v.end(); ++it) {
 		cout << (*it).second << endl;
 	}
